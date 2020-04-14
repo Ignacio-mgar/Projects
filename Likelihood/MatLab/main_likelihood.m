@@ -1,0 +1,11 @@
+n=400;
+y=72;
+theta=(.01:.01:.99);
+subplot(2,1,1);
+plot(theta,Likelihood(n,y,theta));
+xlabel('\theta');
+ylabel('Likelihood');
+subplot(2,1,2);
+plot(theta,Loglike(n,y,theta));
+xlabel('\theta');
+ylabel('Log-likelihood');
